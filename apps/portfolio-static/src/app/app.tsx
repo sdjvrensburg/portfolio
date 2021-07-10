@@ -1,27 +1,44 @@
-import React, { useEffect, useState } from 'react';
-import { Message } from '@portfolio/api-interfaces';
+import React from 'react';
+import Home from './components/home/home';
+import Projects from './components/projects/projects';
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export const App = () => {
-  const [m, setMessage] = useState<Message>({ message: '' });
-
-  useEffect(() => {
-    fetch('/api')
-      .then((r) => r.json())
-      .then(setMessage);
-  }, []);
-
   return (
-    <>
-      <div style={{ textAlign: 'center' }}>
-        <h1>Welcome to portfolio-static!</h1>
-        <img
-          width="450"
-          src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-          alt="Nx - Smart, Extensible Build Framework"
-        />
+    <Router>
+      <div className="container-fluid">
+        <div className="row">
+          <ul className="nav">
+            <li className="nav-item">
+              <Link to="/" className="nav-link active">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/projects" className="nav-link">
+                Projects
+              </Link>
+            </li>
+            <li className="nav-item">
+              <button type="button" className="btn dl-mode">
+                Lite
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>{m.message}</div>
-    </>
+      <div className="container mt-3">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 };
 
