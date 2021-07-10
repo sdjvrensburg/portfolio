@@ -1,3 +1,4 @@
+import * as React from 'react';
 import './images.module.scss';
 
 /* eslint-disable-next-line */

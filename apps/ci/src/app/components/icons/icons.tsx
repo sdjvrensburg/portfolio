@@ -1,4 +1,4 @@
-import './icons.module.scss';
+import * as React from 'react';
 
 /* eslint-disable-next-line */
 export interface IconsProps {}

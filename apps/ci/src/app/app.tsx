@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import styles from './app.module.scss';
 import Logo from './components/logo/logo';
 import Typography from './components/typography/typography';
 import Images from './components/images/images';

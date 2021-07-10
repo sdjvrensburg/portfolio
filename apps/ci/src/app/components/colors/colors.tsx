@@ -1,4 +1,4 @@
-import './colors.module.scss';
+import * as React from 'react';
 
 /* eslint-disable-next-line */
 export interface ColorsProps {}
