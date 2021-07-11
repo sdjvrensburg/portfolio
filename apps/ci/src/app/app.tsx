@@ -13,6 +13,11 @@ export function App() {
       <div className="container-fluid">
         <div className="row">
           <ul className="nav">
+            <li className="nav-item nav-logo">
+              <div className="logo">
+                <img src="/assets/svg-seeklogo.com.svg" alt="" />
+              </div>
+            </li>
             <li className="nav-item">
               <Link to="/" className="nav-link active">
                 Logo
