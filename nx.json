@@ -14,7 +14,13 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
       }
     }
   },
@@ -32,13 +38,6 @@
     },
     "api-interfaces": {
       "tags": []
-    },
-    "ci": {
-      "tags": []
-    },
-    "ci-e2e": {
-      "tags": [],
-      "implicitDependencies": ["ci"]
     },
     "portfolio-static": {
       "tags": []
