@@ -39,6 +39,13 @@
     "api-interfaces": {
       "tags": []
     },
+    "ci": {
+      "tags": []
+    },
+    "ci-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ci"]
+    },
     "portfolio-static": {
       "tags": []
     },
