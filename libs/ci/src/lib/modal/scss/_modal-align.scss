@@ -1,0 +1,79 @@
+.c-modal-dialog.c-modal-dialog--align {
+  position: absolute;
+
+  &-top-left {
+    @include media-breakpoint-up(md) {
+      top: 0;
+      left: 0;
+      transform: unset;
+    }
+  }
+  &-top-center {
+    @include media-breakpoint-up(md) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &-top-right {
+    left: unset;
+    @include media-breakpoint-up(md) {
+      top: 0;
+      right: 0;
+      transform: unset;
+    }
+  }
+  &-mid-left {
+    @include media-breakpoint-up(md) {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+  }
+  &-center {
+    @include media-breakpoint-up(md) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &-mid-right {
+    left: unset;
+    @include media-breakpoint-up(md) {
+      top: 50%;
+      left: unset;
+      right: 0;
+      transform: translate(0, -50%);
+    }
+  }
+  &-bottom-left {
+    top: unset;
+    @include media-breakpoint-up(md) {
+      top: unset;
+      bottom: 0;
+      left: 0;
+      transform: unset;
+    }
+  }
+  &-bottom-center {
+    top: unset;
+    @include media-breakpoint-up(md) {
+      top: unset;
+      bottom: 0;
+
+      left: 50%;
+
+      transform: translate(-50%, 0);
+    }
+  }
+  &-bottom-right {
+    top: unset;
+    @include media-breakpoint-up(md) {
+      top: unset;
+      left: unset;
+      right: 0;
+      bottom: 0;
+      transform: unset;
+    }
+  }
+}

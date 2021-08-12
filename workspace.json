@@ -91,7 +91,7 @@
             "config": {
               "configFolder": "libs/ci/.storybook"
             },
-            "staticDir": ["libs/ci/assets"]
+            "staticDir": ["libs/ci/src/assets"]
           },
           "configurations": {
             "ci": {

@@ -1,0 +1,154 @@
+$device-widths: (
+  'iphone5': 320px,
+  'iphone6': 375px,
+  'iphone6plus': 414px,
+  'iphonexr': 414px,
+  'iphonex': 375px,
+  'iphone12': 390px,
+  'iphone12mini': 375px,
+  'iphone12pro': 428px,
+  'tablet1': 768px,
+  'tablet2': 810px,
+  'tablet3': 834px,
+  'tablet4': 1024px,
+  'laptop1': 1280px,
+  'laptop2': 1366px,
+  'laptop3': 1440px,
+  'laptop4': 1500px,
+);
+
+$device-heights: (
+  'iphone5': 568px,
+  'iphone6': 667px,
+  'iphone6plus': 736px,
+  'iphonexr': 896px,
+  'iphonex': 812px,
+  'iphone12': 844px,
+  'iphone12mini': 812px,
+  'iphone12pro': 926px,
+  'tablet1': 1024px,
+  'tablet2': 1080px,
+  'tablet3': 1194px,
+  'tablet4': 1366px,
+  'laptop1': 800px,
+  'laptop2': 1024px,
+  'laptop3': 900px,
+  'laptop4': 960px,
+);
+
+$res-list: (
+  'res-1': 320px,
+  'res-2': 375px,
+  'res-3': 390px,
+  'res-4': 414px,
+  'res-5': 428px,
+  'res-6': 568px,
+  'res-7': 667px,
+  'res-8': 736px,
+  'res-9': 768px,
+  'res-10': 800px,
+  'res-11': 810px,
+  'res-12': 812px,
+  'res-13': 834px,
+  'res-14': 844px,
+  'res-15': 896px,
+  'res-16': 900px,
+  'res-17': 926px,
+  'res-18': 960px,
+  'res-19': 1024px,
+  'res-20': 1080px,
+  'res-21': 1194px,
+  'res-22': 1280px,
+  'res-23': 1366px,
+  'res-24': 1440px,
+  'res-25': 1500px,
+);
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
+
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}
+@include media-breakpoint-up(xxl) {
+}
+
+.iphone-5 {
+  width: 320px;
+  height: 568px;
+}
+.iphone-6 {
+  width: 375px;
+  height: 667px;
+}
+.iphone-6-plus {
+  width: 414px;
+  height: 736px;
+}
+.iphone-xr {
+  width: 414px;
+  height: 896px;
+}
+.iphone-x {
+  width: 375px;
+  height: 812px;
+}
+.iphone-12 {
+  width: 390px;
+  height: 844px;
+}
+.iphone-12-mini {
+  width: 375px;
+  height: 812px;
+}
+.iphone-12-pro {
+  width: 428px;
+  height: 926px;
+}
+
+.tablet-768-1024 {
+  width: 768px;
+  height: 1024px;
+}
+.tablet-810-1080 {
+  width: 810px;
+  height: 1080px;
+}
+
+.tablet-834-1194 {
+  width: 834px;
+  height: 1194px;
+}
+
+.tablet-1024-1366 {
+  width: 1024px;
+  height: 1366px;
+}
+
+.laptop-1280-800 {
+  width: 1280px;
+  height: 800px;
+}
+.laptop-1366-1024 {
+  width: 1366px;
+  height: 1024px;
+}
+.laptop-1440-900 {
+  width: 1440px;
+  height: 900px;
+}
+.laptop-1500-960 {
+  width: 1500px;
+  height: 960px;
+}

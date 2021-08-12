@@ -1,0 +1,17 @@
+import { ArgsTable } from '@storybook/addon-docs';
+import { Source } from '@storybook/addon-docs';
+import { Logo } from './logo.tsx';
+
+# Logo
+
+## Requirements
+
+- [x] Component must render successfully (If image is not present, fall back to acceptable empty state.)
+- [x] Must scale correctly at different resolutions
+- [x] Must have horizontal and square designs
+- [x] Must take in any image
+- [x] Must adapt to any styling or colour
+
+<ArgsTable of={Logo} />
+
+<Source language="tsx" id="logo--logo-example" type="code" />

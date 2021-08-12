@@ -1,0 +1,107 @@
+.logo {
+  min-width: 10px;
+  min-height: 10px;
+  background-color: grey;
+  display: inline-flex;
+  flex: 0 0 30%;
+  width: auto;
+  padding: 5px;
+  border-radius: 5px;
+
+  img {
+    width: 100px;
+    height: 20px;
+    position: relative;
+
+    // Styling for a broken image
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: grey;
+    }
+  }
+}
+
+.logo-16 {
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+.logo-32 {
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+.logo-64 {
+  img {
+    width: 64px;
+    height: 64px;
+  }
+}
+.logo-128 {
+  img {
+    width: 128px;
+    height: 128px;
+  }
+}
+
+.logo-v-16 {
+  img {
+    width: 32px;
+    height: 16px;
+  }
+}
+.logo-v-32 {
+  img {
+    width: 64px;
+    height: 32px;
+  }
+}
+.logo-v-64 {
+  img {
+    width: 128px;
+    height: 64px;
+  }
+}
+.logo-v-128 {
+  img {
+    width: 256px;
+    height: 128px;
+  }
+}
+
+.logo-res {
+  img {
+    width: 16px;
+    height: 16px;
+
+    @media (min-width: 350px) {
+      width: 32px;
+      height: 32px;
+    }
+
+    @media (min-width: 768px) {
+      width: 128px;
+      height: 32px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 160px;
+      height: 40px;
+    }
+  }
+}
+
+.dark-circle-logo {
+  background-color: black;
+  border-radius: 40px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
