@@ -12,6 +12,7 @@ export default {
         'c-modal-dialog--small',
         'c-modal-dialog--medium',
         'c-modal-dialog--large',
+        'c-modal-dialog--full',
       ],
       control: 'radio',
       defaultValue: null,
@@ -38,6 +39,17 @@ export default {
       control: 'select',
       defaultValue: null,
     },
+    backgroundClass: {
+
+    }, 
+    backgroundImg: {
+      options: [
+        "./forest.jpg",
+        "",
+      ],
+      control: 'select',
+      defaultValue: ''
+    }
   },
   parameters: {
     docs: {
