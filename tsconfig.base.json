@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@portfolio/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@portfolio/ci": ["libs/ci/src/index.ts"]
     }
   },

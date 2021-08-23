@@ -33,25 +33,8 @@
     ]
   },
   "projects": {
-    "api": {
-      "tags": []
-    },
-    "api-interfaces": {
-      "tags": []
-    },
     "ci": {
       "tags": []
-    },
-    "ci-e2e": {
-      "tags": [],
-      "implicitDependencies": ["ci"]
-    },
-    "portfolio-static": {
-      "tags": []
-    },
-    "portfolio-static-e2e": {
-      "tags": [],
-      "implicitDependencies": ["portfolio-static"]
     }
   }
 }
