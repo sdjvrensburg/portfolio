@@ -1,7 +1,11 @@
 import { Story, Meta } from '@storybook/react';
+import { useState } from 'react';
 import { Typography, TypographyProps } from './typography';
 // @ts-ignore
 import TypographyRequirements from './typography.requirements.mdx';
+import { DraftComponent } from './draft-component';
+import ReactQuill from 'react-quill';
+import 'node_modules/react-quill/dist/quill.snow.css';
 
 export default {
   component: Typography,
@@ -18,6 +22,7 @@ export default {
 } as Meta;
 
 export const Basic = (args: TypographyProps) => {
+  const [typographyData, setTypographyData] = useState('');
   return (
     <>
       <div className="row">
@@ -61,5 +66,30 @@ export const Basic = (args: TypographyProps) => {
         </div>
       </div>
     </>
+  );
+};
+
+export const demoArea = (args: TypographyProps) => {
+  const [typographyData, setTypographyData] = useState('');
+  var toolbarOptions = [
+    ['bold', 'underline'],
+    [{ header: [1, 2, 3, 4, 5, 6, false] }],
+  ];
+
+  return (
+    <div className="row">
+      <div className="col-6">
+        <ReactQuill
+          theme="snow"
+          value={typographyData}
+          onChange={setTypographyData}
+          modules={{ toolbar: toolbarOptions }}
+        />
+      </div>
+      <div
+        className="col-6"
+        dangerouslySetInnerHTML={{ __html: typographyData }}
+      ></div>
+    </div>
   );
 };
