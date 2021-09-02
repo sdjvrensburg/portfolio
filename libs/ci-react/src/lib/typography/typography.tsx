@@ -1,7 +1,9 @@
 import './typography.module.scss';
 
 /* eslint-disable-next-line */
-export interface TypographyProps {}
+export interface TypographyProps {
+  fontSrc: string;
+}
 
 /* DEAD COMPONENT TO SHOW OFF CSS */
 

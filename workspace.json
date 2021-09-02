@@ -1,22 +1,22 @@
 {
   "version": 2,
   "projects": {
-    "ci": {
-      "root": "libs/ci",
-      "sourceRoot": "libs/ci/src",
+    "ci-react": {
+      "root": "libs/ci-react",
+      "sourceRoot": "libs/ci-react/src",
       "projectType": "library",
       "targets": {
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/ci/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["libs/ci-react/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/ci"],
+          "outputs": ["coverage/libs/ci-react"],
           "options": {
-            "jestConfig": "libs/ci/jest.config.js",
+            "jestConfig": "libs/ci-react/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -26,12 +26,12 @@
             "uiFramework": "@storybook/react",
             "port": 4400,
             "config": {
-              "configFolder": "libs/ci/.storybook"
+              "configFolder": "libs/ci-react/.storybook"
             },
-            "staticDir": ["libs/ci/src/assets"]
+            "staticDir": ["libs/ci-react/src/assets"]
           },
           "configurations": {
-            "ci": {
+            "ci-react": {
               "quiet": true
             }
           }
@@ -41,13 +41,13 @@
           "outputs": ["{options.outputPath}"],
           "options": {
             "uiFramework": "@storybook/react",
-            "outputPath": "dist/storybook/ci",
+            "outputPath": "dist/storybook/ci-react",
             "config": {
-              "configFolder": "libs/ci/.storybook"
+              "configFolder": "libs/ci-react/.storybook"
             }
           },
           "configurations": {
-            "ci": {
+            "ci-react": {
               "quiet": true
             }
           }

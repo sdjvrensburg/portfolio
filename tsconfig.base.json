@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@portfolio/ci": ["libs/ci/src/index.ts"]
+      "@portfolio/ci": ["libs/ci-react/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

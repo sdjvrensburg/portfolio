@@ -11,6 +11,10 @@
   right: 0;
   bottom: 0;
 
+  &--close {
+    display: none;
+  }
+
   &-dialog {
     width: 100%;
     min-height: 100%;
@@ -52,7 +56,7 @@
         height: 600px;
       }
     }
-    &--full {     
+    &--full {
       @include media-breakpoint-up(md) {
         width: 100%;
         min-height: 100%;
@@ -90,7 +94,7 @@
     flex-grow: 1;
     position: relative;
   }
-  &-close {
+  &--button-close {
     border: none;
     outline: none;
     appearance: none;
@@ -102,11 +106,12 @@
     right: 0;
     z-index: 1;
     cursor: pointer;
+    user-select: none;
   }
   &--bg-img {
     overflow: hidden;
     img {
-      height:auto;
+      height: auto;
     }
   }
   &-bg-img {

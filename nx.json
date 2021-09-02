@@ -33,7 +33,7 @@
     ]
   },
   "projects": {
-    "ci": {
+    "ci-react": {
       "tags": []
     }
   }

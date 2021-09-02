@@ -1,3 +1,3 @@
 module.exports = {
-  projects: [, '<rootDir>/libs/ci'],
+  projects: [, '<rootDir>/libs/ci-react'],
 };
